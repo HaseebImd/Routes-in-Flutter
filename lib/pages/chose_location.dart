@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+
+class Location extends StatefulWidget {
+  Location({Key? key}) : super(key: key);
+
+  @override
+  _LocationState createState() => _LocationState();
+}
+
+class _LocationState extends State<Location> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      
+      appBar: AppBar(
+        title: Text("Location Screen"),
+        backgroundColor: Colors.teal,
+        centerTitle: true,
+      ),
+      body: SafeArea(
+        child: Center(
+          child: Text("Welcome to Flutter Applicartion"),
+        ),
+      ),
+    );
+  }
+}
